@@ -222,7 +222,7 @@ html, body {
 .hero-title {
   background: linear-gradient(135deg, 
     #00d4ff 0%,     /* Bright Cyan */
-    #20b2aa 25%,    /* Light Sea Green */
+    #000000 25%,    /* Black */
     #4682b4 50%,    /* Steel Blue */
     #8a2be2 75%,    /* Blue Violet */
     #ffffff 100%    /* Pure White */
