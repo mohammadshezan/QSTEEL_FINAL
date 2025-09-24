@@ -4,7 +4,6 @@ import Assistant from "@/components/Assistant";
 // Toast is provided at root layout
 import { useToast } from "@/components/Toast";
 import BottomNav from "@/components/BottomNav";
-import Chat from "@/components/Chat";
 import io from "socket.io-client";
 import { SOCKET_URL } from "@/lib/config";
 
@@ -29,7 +28,6 @@ export default function ClientShell({ children }: { children: React.ReactNode })
     <>
       {children}
       <Assistant />
-      <Chat />
       <BottomNav />
     </>
   );
