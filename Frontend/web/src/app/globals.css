@@ -218,20 +218,15 @@ html, body {
     rgba(255, 69, 0, 0.1) 100%);
 }
 
-/* Hero text effects - Attractive Railway-themed Gradient */
+/* Hero title - solid black text (no gradient) */
 .hero-title {
-  background: linear-gradient(135deg, 
-    #00d4ff 0%,     /* Bright Cyan */
-    #000000 25%,    /* Black */
-    #4682b4 50%,    /* Steel Blue */
-    #8a2be2 75%,    /* Blue Violet */
-    #ffffff 100%    /* Pure White */
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-size: 200% 200%;
-  animation: gradientShift 3s ease-in-out infinite alternate;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important; /* ensure solid text on WebKit */
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  background-size: auto !important;
+  animation: none !important;
 }
 
 /* Animated gradient effect */
