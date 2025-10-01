@@ -6,12 +6,16 @@
     "Backend/*"
   ],
   "scripts": {
-    "dev": "npm run -w Frontend/web dev",
-    "dev:api": "npm run -w Backend/NodeJS-API dev",
-    "dev:all": "npm run -w Backend/NodeJS-API dev & npm run -w Frontend/web dev",
+    "dev:frontend": "npm run -w Frontend/web dev",
+    "dev:backend": "npm run -w Backend/NodeJS-API dev",
+    "dev:api": "npm run -w Backend/NodeJS-API dev", 
+    "dev": "npm run dev:frontend",
+    "dev:all": "node -e \"console.log('Start two terminals: npm run dev:backend and npm run dev:frontend (concurrency helper not installed).');\"",
     "build": "npm run -w Frontend/web build",
-    "start": "npm run -w Backend/NodeJS-API start",
-    "start:all": "npm run -w Backend/NodeJS-API start & npm run -w Frontend/web start",
+    "start:frontend": "npm run -w Frontend/web start",
+    "start:backend": "npm run -w Backend/NodeJS-API start",
+    "start": "npm run start:backend",
+    "start:all": "node -e \"console.log('Start two terminals: npm run start:backend and npm run start:frontend');\"",
     "postinstall": "npm -w Frontend/web run postinstall || true"
   }
 }
